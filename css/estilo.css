@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/*variables*/
+/* Cabecera y menú */
+.nav {
+  background-color: #1f1f39;
+  border-radius: 0%;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; }
+
+.nav-tabs {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0; }
+
+.navbar-light {
+  font-size: 20px;
+  color: green; }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 20px;
+    color: green; }
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #1f1f39; }
+  .navbar-light .navbar-brand {
+    color: lightgreen;
+    font-size: 20px;
+    font-weight: 700; }
+
+.nav-item {
+  border-radius: 0%; }
+
+.nav-link {
+  color: lightgreen; }
+  .nav-link:hover {
+    text-decoration: none;
+    color: white; }
+
+.dropdown-menu {
+  background-color: #1f1f39; }
+
+.dropdown-item {
+  color: white; }
+
+/* Parallax */
+.parallax {
+  background-image: url("../img/perifericos_comunicaciones_electricos.jpg");
+  height: 80vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 3vw;
+  padding-top: 20vw;
+  margin: 0; }
+  .parallax h4 {
+    font-size: 3rem;
+    text-align: left;
+    color: white; }
+  .parallax p {
+    font-size: 2rem;
+    text-align: left;
+    color: white; }
+
+/* Contenedor bootstrap y Jumbotron */
+.container-fluid {
+  padding: 0; }
+
+.jumbotron {
+  background-color: #1f1f39;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0%;
+  padding: 0;
+  padding-top: 0.5rem; }
+  .jumbotron h2 {
+    color: #78f578; }
+  .jumbotron p {
+    margin-bottom: 0; }
+
+/* Tarjetas en contenedor */
+.flexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: #1f1f39;
+  gap: 1%; }
+
+.card-body {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #0a0a0a;
+  background-color: #e5f5e5; }
+
+.card {
+  border: 5px solid #1f1f39;
+  margin-bottom: 10px;
+  padding-top: 20px; }
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 1s;
+  border-color: #78f578; }
+
+.btn {
+  background-color: #1f1f39;
+  color: white; }
+  .btn:hover {
+    color: #e5f5e5; }
+
+.card-img-top, .card-img-top_2img, .card-img-top_3img {
+  width: 100%;
+  object-fit: contain; }
+
+.card-img-top_2img {
+  height: 25vw; }
+
+.card-img-top_3img {
+  height: 20vw; }
+
+/* Formulario y mapa */
+.formulario {
+  color: white;
+  background-color: #1f1f39;
+  padding-bottom: 2%;
+  padding-left: 25%;
+  padding-right: 25%; }
+
+.titulos_pagina_contacto, .titulo_formulario, .titulo_mapa {
+  text-align: center;
+  color: #78f578; }
+
+.titulo_formulario {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: #1f1f39; }
+
+.titulo_mapa {
+  padding-bottom: 10px; }
+
+.mapa_oficina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: #1f1f39;
+  padding: 20px; }
+
+/* Footer */
+.page-footer {
+  background-color: #0a0a0a;
+  color: white;
+  width: 100%;
+  text-align: center; }
+
+.font-weight-bold {
+  color: #489d48; }
+
+/* medias queries */
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+  .parallax {
+    height: 80vh;
+    width: 100%;
+    padding-left: 3vw;
+    padding-top: 20vh; }
+    .parallax h4 {
+      font-size: 3rem; }
+    .parallax p {
+      font-size: 2rem; } }
+
+/* vista tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .parallax {
+    height: 80vh;
+    width: 100%;
+    padding-left: 3vw;
+    padding-top: 20vh; }
+    .parallax h4 {
+      font-size: 2.5rem; }
+    .parallax p {
+      font-size: 1.8rem; }
+  .card-img-top_2img {
+    height: 30vw; }
+  .card-img-top_3img {
+    height: 25vw; } }
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .parallax {
+    height: 90vh;
+    width: 100%;
+    padding-left: 3vw;
+    padding-top: 30vh; }
+    .parallax h4 {
+      font-size: 2rem; }
+    .parallax p {
+      font-size: 1.5rem; }
+  .flexContainer {
+    display: flex;
+    flex-direction: column; }
+  .card-img-top_2img {
+    height: 50vw; }
+  .card-img-top_3img {
+    height: 40vw; } }
